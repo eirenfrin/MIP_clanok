@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{coursepaper}
+\documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -9,116 +9,34 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
 \usepackage{cite}
 %\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
-
-\author{Meno Priezvisko\\[2pt]
-	{\small Slovenská technická univerzita v Bratislave}\\
-	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
-	}
-
-\date{\small 30. september 2015} % upravte
-
-
+\title{Agilné postupy pri vývoji medicínskeho softvéru} 
+\author{Irina Makarova\\[2pt]}
+\date{}
 
 \begin{document}
-
+\renewcommand{\abstractname}{\vspace{-\baselineskip}} %removes abstract heading
 \maketitle
 
 \begin{abstract}
-\ldots
+V súčasnosti sa rýchlo vyvíja trh zdravotníckych prenositeľných zariadení. Vodopádový model, ktorý sa klasicky používal pri vývoji bezpečnostne kritického softvéru, už pre svoju zdĺhavosť a nepružnosť nepredstavuje optimálny postup. Do popredia sa dostávajú rôzne agilné a kombinované prístupy, čo prináša so sebou otázku, ako implementovať do procesu vývoja agilné metódy a pri tom dodržať požadované normy. Tento článok prináša stručný prehľad aktuálne platných noriem; vysvetľuje podstatu vodopádového a agilných modelov (Scrum, XP, DSDM), porovnáva ich a poukazuje na črty jednotlivých stratégií, ktoré sú prínosné pre túto oblasť. V článku sa uvádzajú niektoré existujúce riešenia, ako sa tieto modely dajú efektívne kombinovať pri vývoji medicínskeho softvéru.
 \end{abstract}
 
 
-
-\section{Úvod}
-
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+\section{Úvod} \label{uvod}
 
 
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+%\section{} \label{}
 
 
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+\section{Záver} \label{zaver} 
 
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+% generuje zoznam literatúry z obsahu súboru literatura.bib
+%\bibliography{literatura}
+%\bibliographystyle{plain} % alpha/ abbrv/ plain
 \end{document}
